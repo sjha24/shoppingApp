@@ -185,6 +185,39 @@ This e-commerce application allows users to browse products, place orders with o
 ![Screenshot (338)](https://github.com/sjha24/shoppingApp/assets/98340874/6c93e8df-5bcb-48a3-8f2f-082145f10548)
 
 
+### Fetch Available Coupons
+**URL:**: `/fetchCoupons`
+- **Method:** `GET`
+- **Description:**  Retrieves a list of available coupons along with their discount percentages.
+- **Responses Body:**
+    - Success Response:
+        - Status code: `200 OK`
+```json
+{
+  "OFF5": 5,
+  "OFF10": 10
+}
+```
+![Screenshot (343)](https://github.com/sjha24/shoppingApp/assets/98340874/447f487b-198e-4ca4-80de-10b07f03d00e)
+
+
+### Get Inventory Status
+**URL:**: `/Inventory`
+- **Method:** `GET`
+- **Description:**  Retrieves the current status of the inventory, including the available quantities of products.
+- **Responses Body:**
+    - Success Response:
+        - Status code: `200 OK`
+```json
+{
+  "ordered": 30,
+  "price": 100,
+  "available": 970
+}
+```
+![Screenshot (344)](https://github.com/sjha24/shoppingApp/assets/98340874/f9795581-680e-4a4e-920f-fc2a59ac2fe1)
+
+
 ## Swagger Support for API Documentation
 
 The project includes Swagger support for API documentation. Swagger is a powerful tool that provides interactive documentation for RESTful APIs, enabling developers to explore and test endpoints easily. By integrating Swagger into your project, you can enhance the usability and understanding of your API, making it easier for developers to integrate with your system.
